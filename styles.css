@@ -57,3 +57,33 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 }
+footer {
+  margin-top: 50px;
+  background-color: transparent;
+  color: #007bff;
+  padding: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+.signature {
+  display: inline-flex;
+  align-items: center;
+}
+
+.signature img {
+  height: 1em;
+  margin-left: 5px; 
+}
