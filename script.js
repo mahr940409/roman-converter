@@ -48,6 +48,12 @@ function convertToRoman(num) {
 }
 
 document.getElementById('convert-roman-btn').addEventListener('click', convertRomanNumber);
+document.getElementById('roman').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+      event.preventDefault(); 
+      convertRomanNumber(); 
+  }
+});
 
 function convertRomanNumber() {
   var romanInput = document.getElementById('roman').value.toUpperCase();
