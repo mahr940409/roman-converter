@@ -5,7 +5,6 @@ body {
   background-image: url('/img/_f1fa85fd-4dfe-47cf-8c02-ea87302cb55a.jpeg');
   background-size: cover; 
   background-position: center;
-  
 }
 
 .container {
@@ -24,7 +23,8 @@ h1 {
   transition: color 0.5s; 
 }
 
-input[type="number"] {
+input[type="number"],
+input[type="text"] {
   width: 80%;
   padding: 10px;
   margin: 10px auto;
@@ -41,12 +41,14 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s; 
+}
 
 button:hover {
   background-color: #0056b3;
 }
 
-#output {
+#output,
+#output-roman {
   margin-top: 20px;
   font-weight: bold;
   color: #007bff; 
@@ -56,7 +58,7 @@ button:hover {
   border-radius: 5px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
-}
+
 footer {
   margin-top: 50px;
   background-color: transparent;
@@ -78,8 +80,9 @@ footer {
   width: 30px;
   height: 30px;
 }
+
 .signature {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
